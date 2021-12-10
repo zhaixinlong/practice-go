@@ -61,7 +61,18 @@ func mergeTwoListsTraverse(list1 *ListNode, list2 *ListNode) *ListNode {
 	return tmpNode.Next
 }
 
-func main() {
+func GenerateListNode(arr []int) *ListNode {
+	n1 := &ListNode{Val: 0}
+	tmpN := n1
+	for _, v := range arr {
+		tmpN.Next = &ListNode{Val: v}
+
+		tmpN = tmpN.Next
+	}
+	return n1.Next
+}
+
+func GetListNode1() *ListNode {
 	n1 := &ListNode{Val: 1}
 	n2 := &ListNode{Val: 2}
 	n3 := &ListNode{Val: 3}
@@ -69,14 +80,23 @@ func main() {
 	n3.Next = n4
 	n2.Next = n3
 	n1.Next = n2
+	return n1
+}
 
-	nn1 := &ListNode{Val: 1}
-	nn2 := &ListNode{Val: 3}
-	nn3 := &ListNode{Val: 4}
-	nn4 := &ListNode{Val: 5}
-	nn3.Next = nn4
-	nn2.Next = nn3
-	nn1.Next = nn2
+func GetListNode2() *ListNode {
+	n1 := &ListNode{Val: 1}
+	n2 := &ListNode{Val: 3}
+	n3 := &ListNode{Val: 4}
+	n4 := &ListNode{Val: 5}
+	n3.Next = n4
+	n2.Next = n3
+	n1.Next = n2
+	return n1
+}
+
+func main() {
+	// n1 := GetListNode1()
+	// nn1 := GetListNode2()
 
 	// 遍历实现
 	// ln := mergeTwoListsTraverse(n1, nn1)
@@ -89,12 +109,21 @@ func main() {
 	// }
 
 	// 递归实现
-	ln := mergeTwoLists(n1, nn1)
+	// ln := mergeTwoLists(n1, nn1)
+	// for {
+	// 	fmt.Printf("%d,", ln.Val)
+	// 	if ln.Next == nil {
+	// 		break
+	// 	}
+	// 	ln = ln.Next
+	// }
+
+	wn := GenerateListNode([]int{1, 1, 2, 3, 3, 4, 4, 5})
 	for {
-		fmt.Printf("%d,", ln.Val)
-		if ln.Next == nil {
+		fmt.Printf("%d,", wn.Val)
+		if wn.Next == nil {
 			break
 		}
-		ln = ln.Next
+		wn = wn.Next
 	}
 }
