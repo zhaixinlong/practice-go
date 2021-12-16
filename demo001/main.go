@@ -5,8 +5,8 @@ import "fmt"
 // 合并两个有序链表
 
 type ListNode struct {
-	Val  int
-	Next *ListNode
+	Val  int       // 链表数据域，任意数据类型
+	Next *ListNode // 链表后继指针域，下一节点的内存地址
 }
 
 // 递归
