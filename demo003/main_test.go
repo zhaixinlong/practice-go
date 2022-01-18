@@ -13,7 +13,7 @@ func Test_calcSum(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{name: "t1", args: args{num: 100}, want: 5050},
-		{name: "t1", args: args{num: 10}, want: 55},
+		{name: "t2", args: args{num: 10}, want: 55},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
