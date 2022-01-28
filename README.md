@@ -8,7 +8,11 @@ practice for go
 - [递归求和](./demo003/main.go)
 - [斐波那契数列求和(黄金分割数列、兔子数列)](./demo004/main.go)
 
-## 排序
+## 数组排序
 - [冒泡排序](./demo006/main.go)
 - [选择排序](./demo006/main.go)
 - [插入排序](./demo006/main.go)
+
+## 链表排序
+- [冒泡排序](./demo007/main.go)
+- [插入排序](./demo007/main.go)
