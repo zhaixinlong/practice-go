@@ -6,17 +6,6 @@ import (
 	"github.com/zhaixinlong/practice-go/model"
 )
 
-func GenerateListNode(arr []int) *model.ListNode {
-	n1 := &model.ListNode{Val: 0}
-	tmpN := n1
-	for _, v := range arr {
-		tmpN.Next = &model.ListNode{Val: v}
-
-		tmpN = tmpN.Next
-	}
-	return n1.Next
-}
-
 // 冒泡排序  改变val
 func sortBubble(head *model.ListNode) *model.ListNode {
 	if head == nil || head.Next == nil {
@@ -95,7 +84,7 @@ func sortInsertion(head *model.ListNode) *model.ListNode {
 }
 
 func main() {
-	wn := GenerateListNode([]int{-1, 9, 7, 3, 1, 2, 8})
+	wn := model.GenerateListNode([]int{-1, 9, 7, 3, 1, 2, 8})
 	// wn := GenerateListNode([]int{3, 4, 1})
 	// for {
 	// 	fmt.Printf("%d,", wn.Val)
