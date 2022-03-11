@@ -1,3 +1,3 @@
 module github.com/zhaixinlong/practice-go
 
-go 1.16
+go 1.17

@@ -1,11 +1,11 @@
-package main
+package sort_slice
 
 import (
 	"reflect"
 	"testing"
 )
 
-func Test_sortBubble(t *testing.T) {
+func TestSelectionSort(t *testing.T) {
 	type args struct {
 		nums []int
 	}
@@ -20,23 +20,9 @@ func Test_sortBubble(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := sortBubble(tt.args.nums); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("sortBubble() = %v, want %v", got, tt.want)
+			if got := SelectionSort(tt.args.nums); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("SelectionSort() = %v, want %v", got, tt.want)
 			}
-		})
-	}
-}
-
-func Test_main(t *testing.T) {
-	tests := []struct {
-		name string
-	}{
-		// TODO: Add test cases.
-		{name: "main"},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			main()
 		})
 	}
 }

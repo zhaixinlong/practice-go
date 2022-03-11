@@ -9,16 +9,21 @@ practice for go
 - [斐波那契数列求和(黄金分割数列、兔子数列)](./demo004/main.go)
 
 ## 数组排序
-- [冒泡排序](./demo006/main.go)
-- [选择排序](./demo006/main.go)
-- [插入排序](./demo006/main.go)
+- [冒泡排序](./sort_slice/slice_bubble.go)
+- [选择排序](./sort_slice/slice_selection.go)
+- [插入排序](./sort_slice/slice_insertion.go)
 
 ## 链表排序
-- [冒泡排序](./demo007/main.go)
-- [插入排序](./demo007/main.go)
+- [冒泡排序](./sort_list_node/list_node_bubble.go)
+- [插入排序](./sort_list_node/list_node_insertion.go)
 
 ## EncryptAes ECB CBC CFB
 - [AES加密(ECB/CBC/CFB)](./utils/crypted_aes.go)
+
+## 练习
+- [goroutines access the same variable slice](./pratice001/consistent.go)
+- [unicode](./pratice002/unicode.go)
+- [contextWithTimeout](./pratice003/contextWithTimeout.go)
 ## channel
 ```golang
 // a simple producer customer
