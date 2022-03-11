@@ -12,6 +12,7 @@ practice for go
 - [冒泡排序](./sort_slice/slice_bubble.go)
 - [选择排序](./sort_slice/slice_selection.go)
 - [插入排序](./sort_slice/slice_insertion.go)
+- [快速排序](./sort_slice/slice_quick.go)
 
 ## 链表排序
 - [冒泡排序](./sort_list_node/list_node_bubble.go)
