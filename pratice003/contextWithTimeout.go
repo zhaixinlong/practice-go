@@ -8,7 +8,7 @@ import (
 )
 
 // 多个goroutine 并发执行 设置超时时间，也允许提前结束，允许失败，不在意返回结果
-func main() {
+func main1() {
 	wg := &sync.WaitGroup{}
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*3)
 	defer cancel()

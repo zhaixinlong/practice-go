@@ -24,7 +24,11 @@ practice for go
 ## 练习
 - [goroutines access the same variable slice](./pratice001/consistent.go)
 - [unicode](./pratice002/unicode.go)
-- [contextWithTimeout](./pratice003/contextWithTimeout.go)
+- contextWithTimeout
+	- [example01](./pratice003/contextWithTimeout.go)
+	- [example02](./pratice003/contextWithTimeout1.go)
+- [contextWithCancel](./pratice004/contextWithCancel.go)
+
 ## channel
 ```golang
 // a simple producer customer
