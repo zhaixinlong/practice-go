@@ -29,6 +29,9 @@ practice for go
 	- [example02](./pratice003/contextWithTimeout1.go)
 - [contextWithCancel](./pratice004/contextWithCancel.go)
 
+## 其它
+- [位运算符](./demo008/main.go)
+
 ## channel
 ```golang
 // a simple producer customer
